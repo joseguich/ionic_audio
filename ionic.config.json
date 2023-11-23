@@ -1,0 +1,7 @@
+{
+  "name": "myMisic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
