@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Play Music
+      <ion-icon name="musical-notes-outline"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-card>
+  <ion-button (click)="play()" *ngIf="!reproduciendo">
+    <ion-icon name="play"></ion-icon>
+  </ion-button>
+
+  <ion-button (click)="pause()" *ngIf="reproduciendo">
+    <ion-icon name="pause"></ion-icon>
+  </ion-button>
+</ion-card>
