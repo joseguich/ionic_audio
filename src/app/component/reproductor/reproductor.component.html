@@ -7,12 +7,24 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-card>
-  <ion-button (click)="play()" *ngIf="!reproduciendo">
-    <ion-icon name="play"></ion-icon>
-  </ion-button>
+<ion-card-content>
+  <ion-card>
+    <ion-item class="ion-padding">
+      <img
+        height="100"
+        width="400"
+        src="https://www.semana.com/resizer/TdVBCEqS745724W7eR8FyBRW2Nk=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/XUOOSILRCNBHVKNCZ3LTOWPXXY.jpg"
+        alt=""
+      />
+    </ion-item>
+    <h5 class="ion-text-center ion-padding title">Anuel AA - El Montrous</h5>
 
-  <ion-button (click)="pause()" *ngIf="reproduciendo">
-    <ion-icon name="pause"></ion-icon>
-  </ion-button>
-</ion-card>
+    <ion-button (click)="play()" *ngIf="!reproduciendo">
+      <ion-icon name="play"></ion-icon>
+    </ion-button>
+
+    <ion-button (click)="pause()" *ngIf="reproduciendo">
+      <ion-icon name="pause"></ion-icon>
+    </ion-button>
+  </ion-card>
+</ion-card-content>
